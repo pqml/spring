@@ -1,7 +1,7 @@
 # :wavy_dash:  Spring
 [:books: **Documentation**](#api)  |  [:tada: **Example**](https://pqml.github.io/spring) | [:globe_with_meridians: **Internet modules**](https://www.npmjs.com/org/internet)
 
-- Framerate-inpendant spring physics
+- Framerate-independant spring physics
 - Small, < 1kb gzipped
 - Control the spring with tension and friction
 - Adjustable timestep for the physics solver
