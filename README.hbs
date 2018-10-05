@@ -1,0 +1,35 @@
+# :wavy_dash:  Spring
+[:books: **Documentation**](#api)  |  [:tada: **Example**](https://pqml.github.io/spring) | [:globe_with_meridians: **Internet modules**](https://www.npmjs.com/org/internet)
+
+- Framerate-inpendant spring physics
+- Small, < 1kb gzipped
+- Control the spring with tension and friction
+- Adjustable timestep for the physics solver
+- `onStart` / `onStop` callbacks
+- This lib was made to learn more about fixed timesteps and integration.
+  - It's a pretty basic Euler integration - not sure it will work for complex structures like spring chaining.
+  - If you need a rock-solid spring physics library, use [ReboundJS](https://github.com/facebook/rebound-js)
+- Articles used :
+  - [Fix Your Timestep!](https://gafferongames.com/post/fix_your_timestep/)
+  - [Frame Rate Independent Damping using Lerp](http://www.rorydriscoll.com/2016/03/07/frame-rate-independent-damping-using-lerp/)
+  - [Integration by Example - Euler vs Verlet vs Runge-Kutta](http://codeflow.org/entries/2010/aug/28/integration-by-example-euler-vs-verlet-vs-runge-kutta/)
+
+<br>
+
+# Requirements
+- ES6 Modules support
+  - Using a module bundler like Webpack, Rollup or Parcel
+  - [Native support from browser](https://caniuse.com/#feat=es6-module)
+  - From NodeJS with [esm](https://github.com/standard-things/esm)
+
+<br>
+
+# API
+
+<a name="Spring"></a>
+
+{{#globals name="Spring"}}
+{{>member-index~}}
+<br>
+{{>members~}}
+{{/globals}}

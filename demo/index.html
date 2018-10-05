@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>@internet/spring example</title>
+    <meta name="description" content="Example for @internet/spring">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimal-ui">
+    <link href="//fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+    <link href="//cdn.jsdelivr.net/npm/@ajusa/lit@1.0.0/dist/lit.css" rel="stylesheet">
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .dg * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .dot {
+        position: fixed;
+        margin: 0; padding: 0;
+        border-radius: 50%;
+        box-sizing: border-box;
+      }
+
+      .dot:nth-of-type(1) {
+        top: 17px; left: 17px;
+        width: 14px; height: 14px;
+        background: #fe2400;
+      }
+
+      .dot.stopped:nth-of-type(1) {
+        background: #2aa9d2;
+      }
+
+      .dot:nth-of-type(2) {
+        top: 12px; left: 12px;
+        width: 24px; height: 24px;
+        border: 2px solid #fe2400;
+      }
+
+      .dot.stopped:nth-of-type(2) {
+        border-color: #2aa9d2;
+      }
+
+      .dot:nth-of-type(3) {
+        top: 7px; left: 7px;
+        width: 34px; height: 34px;
+        border: 2px solid #fe2400;
+      }
+
+      .dot.stopped:nth-of-type(3) {
+        border-color: #2aa9d2;
+      }
+    </style>
+  </head>
+  <body class="c">
+    <h2>@internet/spring example</h2>
+    <h5><a href="https://github.com/pqml/spring">→ View github repository</a></h5>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <script src="//cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <script src="spring.umd.js"></script>
+  </body>
+</html>

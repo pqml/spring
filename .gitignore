@@ -1,0 +1,25 @@
+docs
+.gh-pages-cache
+
+# Editors
+.idea
+.vscode
+
+# Node / Yarn / Npm
+node_modules
+npm-debug.log*
+
+# Logs and Temporary files
+.tmp
+logs
+*.log
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Misc
+coverage
