@@ -1,7 +1,7 @@
 {
   "name": "@internet/spring",
   "version": "0.0.1",
-  "description": "Framerate-independant spring physic",
+  "description": "Framerate-independant spring physics",
   "source": "lib/index.js",
   "main": "lib/index.js",
   "module": "lib/index.js",
