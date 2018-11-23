@@ -5,7 +5,7 @@ import * as dat from 'dat.gui'
 const FPS = [null, 10, 6]
 const gui = new dat.GUI()
 
-const params = { tension: 0.1, friction: 0.2, timestep: 1000 / 60 }
+const params = { tension: 0.1, friction: 0.2, timestep: 8 }
 const els = Array
   .from(document.querySelectorAll('.dot'))
   .map((el, i) => createSpring(el, i, {
@@ -13,12 +13,11 @@ const els = Array
     perfectStop: true,
     tension: params.tension,
     friction: params.friction,
-    step: params.timestep
+    step: 8
   }))
 
 gui.add(params, 'tension', 0, 1).onChange(v => { els.forEach(el => el.setTension(v)) })
 gui.add(params, 'friction', 0, 1).onChange(v => { els.forEach(el => el.setFriction(v)) })
-gui.add(params, 'timestep', 0.1, 80).onChange(v => { els.forEach(el => el.setStep(v)) })
 
 document.addEventListener('mousemove', e => {
   for (let i = 0; i < els.length; i++) els[i].setTarget(e.clientX, e.clientY)

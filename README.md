@@ -61,7 +61,7 @@ Create a new Spring instance.
 | [options.initial] | <code>number</code> | <code>0</code> | Initial value / targetValue of your spring. |
 | [options.tension] | <code>number</code> | <code>0.1</code> | Tension/Stifness of your spring. |
 | [options.friction] | <code>number</code> | <code>0.2</code> | *From 0 to 1.* Friction (Damping) of your spring. |
-| [options.step] | <code>number</code> | <code>1000/60</code> | Timestep of the physics solver (in ms). Step > 35ms will give you pretty bad results. |
+| [options.step] | <code>number</code> | <code>10</code> | Timestep of the physics solver (in ms). Step > 16.67ms will give you pretty bad results. |
 | [options.onStart] | <code>function</code> |  | `onStart` will be called when the spring starts moving. |
 | [options.onStop] | <code>function</code> |  | `onStop` will be called when your the spring stops moving. |
 | [options.precisionStop] | <code>number</code> | <code>0.0001</code> | Minimum distance between `value` and `target` to consider the spring stopped. |
